@@ -1,0 +1,1 @@
+# Rotary_Inverted_Pendulum_using_MPC_and_LQR
