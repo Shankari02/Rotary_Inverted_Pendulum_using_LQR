@@ -9,4 +9,4 @@ The function draw includes the animation of an inverted pendulum system.
 
 The image representation of the image :
 
-![inverted_pendulum](\assets\inverted_pendulum.png)
+![inverted_pendulum](.\MATLAB_simulation\Shankari\assets\inverted_pendulum.png)
