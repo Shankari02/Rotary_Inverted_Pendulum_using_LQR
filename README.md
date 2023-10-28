@@ -1,4 +1,4 @@
-# Rotary_Inverted_Pendulum_using_MPC_and_LQR
+# Rotary_Inverted_Pendulum_using_LQR
 
 #### Introduction 
 Control systems form the basis for ensuring that every automatic system performs its ordained task accurately, efficiently and quickly (optimally) despite being subjected to varying environmental conditions. In this project, we will implement MPC(Model Predictive control) on Rotary Inverted Pendulum system using LQR(Linear Quadratic Regulator) as an optimizer. The mechanical structure of inverted pendulum is based on two factors, the actuation method and degree of freedom (DOF) of the system. The actuation methods are linear and rotary. The simplest controllable structure of inverted pendulum system has two DOF, one for the base position and other for the pendulum angle. 
