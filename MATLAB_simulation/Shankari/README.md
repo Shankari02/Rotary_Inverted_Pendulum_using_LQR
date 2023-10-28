@@ -7,6 +7,6 @@ The state-equations have been derived by using the Lagrangian function described
 Further, we use the lqr function where in we calculate k. We feed the penalties Q and R which helps stabilise the system.
 The function draw includes the animation of an inverted pendulum system.
 
-The image representation of the image :
+The image representation of the simulation :
 
-![inverted_pendulum](.\MATLAB_simulation\Shankari\assets\inverted_pendulum.png)
+![inverted_pendulum](.\assets\inverted_pendulum.png)
