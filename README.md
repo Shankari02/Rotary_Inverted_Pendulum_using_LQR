@@ -1,15 +1,26 @@
 # Rotary_Inverted_Pendulum_using_LQR
 
 #### Introduction 
-Control systems form the basis for ensuring that every automatic system performs its ordained task accurately, efficiently and quickly (optimally) despite being subjected to varying environmental conditions. In this project, we will implement MPC(Model Predictive control) on Rotary Inverted Pendulum system using LQR(Linear Quadratic Regulator) as an optimizer. The mechanical structure of inverted pendulum is based on two factors, the actuation method and degree of freedom (DOF) of the system. The actuation methods are linear and rotary. The simplest controllable structure of inverted pendulum system has two DOF, one for the base position and other for the pendulum angle. 
-Rotary inverted pendulum system is essentially a combination of three elements: a motor, an arm and a pendulum. In this system one end of the arm is connected to the shaft of the motor and pendulum is attached to other end of the arm by a pin joint that is allowed to rotate freely in the vertical plane.
+
+Control systems provide the foundational framework to ensure that automated systems execute their designated tasks accurately, efficiently, and optimally, even during dynamic environmental conditions. In this project, our focus is on implementing a Rotary Inverted Pendulum system using the Linear Quadratic Regulator (LQR) approach for control.
+
+The design and mechanics of an inverted pendulum system depend on two key factors: the method of actuation and the degree of freedom (DOF) inherent to the system. Actuation methods can be categorized as linear or rotary, and the most basic controllable structure of an inverted pendulum system typically encompasses two DOFs, one for the base position and the other for managing the pendulum's angle.
+
+The Rotary Inverted Pendulum system consists of three fundamental components: a motor, an arm, and a pendulum. In this configuration, one end of the arm is affixed to the motor's shaft, while the pendulum is connected to the shaft of a rotary encoder, enabling it to rotate freely within the vertical plane. This system architecture forms the core of our project, where we'll apply LQR control to effectively manage and stabilize the rotary inverted pendulum.
 
 #### Basis
-An **inverted pendulum** is a pendulum that has its Centre of mass above its pivot point. It is unstable and without additional help will fall over. It can be suspended stably in this inverted position by using a control system to monitor the angle of the pole and move the pivot point horizontally back under the Centre of mass when it starts to fall over, keeping it balanced. The inverted pendulum is a classic problem in dynamics and control theory and is used as a benchmark for testing control strategies. It is often implemented with the pivot point mounted on a cart that can move horizontally under control of an electronic servo system as shown in the photo; this is called a cart and pole apparatus. The Pendulum is made stable by supplying minimum constant current at high frequency which just makes it oscillate at its position.
+
+An **inverted pendulum** is a pendulum in which its center of mass is situated above its pivot point. This configuration renders it inherently unstable, and it would naturally topple over without external intervention. However, through the use of a control system, it can be maintained in a stable, inverted position.
+
+The control system constantly monitors the angle of the pendulum and makes adjustments to shift the pivot point horizontally. This action effectively repositions the pivot point beneath the center of mass, preventing the pendulum from falling over and keeping it balanced. The inverted pendulum presents a classic challenge in the fields of dynamics and control theory. It serves as a benchmark for testing and evaluating various control strategies.
+
+One common implementation involves mounting the pivot point on a cart that can be moved horizontally under the control of an electronic servo system. This setup is often referred to as a "cart and pole apparatus." The pendulum's stability is maintained by supplying a minimal, constant current at a high frequency, which induces small oscillations around its inverted position.
 
 ### Research Topics
-* **Linear Algebra**, for representation of various aspects of physical systems, stability of systems, etc.
-* A thorough understanding of **Control Systems**.
+
+1. **Linear Algebra**: This area is pivotal for representing various aspects of physical systems and assessing their stability, making it a foundation for many applications in engineering and science.
+
+2. **Control Systems**: A deep understanding of control systems is essential for managing and optimizing the behavior of dynamic systems, offering opportunities to enhance the performance of a wide range of applications, from robotics to industrial automation.
 
 ### List of Software Used
 * [MATLAB R2023a](https://in.mathworks.com/products/matlab.html) for modelling and simulation of inverted pendulum. 
@@ -17,19 +28,33 @@ An **inverted pendulum** is a pendulum that has its Centre of mass above its piv
 * Embedded C
 
 ### List of Hardware Used
-* NEMA-17 Stepper Motor
-* Motor Driver
-* Rotary Encoder (used for measuring the deviation of the pendulum rod from the initial position)
-* Custom designed pendulum rod, horizontal rod and base plate
+In our project, the following key components play crucial roles:
+
+1. **NEMA-17 Stepper Motor**: This motor provides control over the rotational movement, making it an integral part of the system for controlling the pendulum's motion.
+
+2. **Motor Driver**: The motor driver serves as the intermediary between the microcontroller and the stepper motor, enabling the translation of control signals into precise motor movements.
+
+3. **Rotary Encoder**: The rotary encoder is used for measuring and monitoring the deviation of the pendulum rod from its initial position, providing feedback to the control system.
+
+4. **Custom Designed Pendulum Rod, Horizontal Rod, and Base Plate**: These custom-designed components form the physical structure of our system, and their design impacts the system's mechanical stability and performance.
+
+These components collectively create a system that allows for precise control and measurement of the inverted pendulum, enabling us to implement and test various control strategies effectively.
   
 ## Modelling the system in MATLAB
-A **simulation** is the imitation of the operation of a real-world process or system over time.  Simulation represents the evolution of the model over time.
-We consider any system to be of the form
-_ẋ_ = Ax + Bu
-where x is the state vector and u is the external input provided.
-In an ideal system, we do not provide any external input u.
-For a system to be controlled using LQR, the external input is given by $$u = -Kx$$
-This minimises the cost function of LQR and helps in stabilising the system.
+
+A **simulation** is a method of replicating the behavior of a real-world process or system across a span of time. It involves creating a model that evolves and represents the dynamic changes in the real system over time.
+
+In the context of control systems, we often describe a system using the differential equation:
+
+$$ẋ = Ax + Bu$$
+
+Here, 'x' is the state vector, and 'u' represents an external input to the system. In an ideal system, there may be no external input (u = 0).
+
+To control a system using the Linear Quadratic Regulator (LQR) approach, we calculate the external input as follows:
+
+$$u = -Kx$$
+
+Where 'K' is a control gain matrix that is derived using the LQR method. This input minimizes the cost function associated with LQR and plays a vital role in stabilizing the system, ensuring it behaves as desired.
 
 ## Implementation of Inverted Pendulum in Hardware
 
