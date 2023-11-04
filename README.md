@@ -68,9 +68,9 @@ Where 'K' is a control gain matrix that is derived using the LQR method. This in
 ## Acknowledgements
  Special thanks to our Mentors
  
--- [Mahesh]()
+-- [Mahesh](https://github.com/Asc91)
 
--- [Janhavi]()
+-- [Janhavi](https://github.com/janhavi1803)
 
 ## Resources
 * [Linear Algebra playlist by 3Blue1Brown](https://www.youtube.com/playlist?list=PL0-GT3co4r2y2YErbmuJw2L5tW4Ew2O5B)
