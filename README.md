@@ -60,9 +60,19 @@ Where 'K' is a control gain matrix that is derived using the LQR method. This in
 
 ![Inverted_pendulum](/assets/Lqr_inverted_pendulum.gif)
 
+## Designing in Solidworks
+
+![solidworks](/assets/solidworks.png)
+
 ## Implementation of Inverted Pendulum in Hardware
 
+![assembly](/assets/assembly.jpg)
+
 ## **Future Work**
+
+The system can be enhanced by fine-tuning it to rectify any logical errors.
+Additionally, a swing-up controller incorporated to further improve its performance.
+
 
 ## Contributors
 -- [Shankari](https://github.com/Shankari02)
@@ -79,5 +89,6 @@ Where 'K' is a control gain matrix that is derived using the LQR method. This in
 ## Resources
 * [Linear Algebra playlist by 3Blue1Brown](https://www.youtube.com/playlist?list=PL0-GT3co4r2y2YErbmuJw2L5tW4Ew2O5B)
 * [Control Bootcamp playlist by Steve Brunton](https://www.youtube.com/playlist?list=PLMrJAkhIeNNR20Mz-VpzgfQs5zrYi085m)
+* [Reference for state equations](https://www.researchgate.net/publication/314290534_Dynamic_Modeling_and_Simulation_of_a_Rotational_Inverted_Pendulum)
 * [ESP-IDF documentation](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/)
 * [LEDC-PIN](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/ledc.html)
