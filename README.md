@@ -56,6 +56,10 @@ $$u = -Kx$$
 
 Where 'K' is a control gain matrix that is derived using the LQR method. This input minimizes the cost function associated with LQR and plays a vital role in stabilizing the system, ensuring it behaves as desired.
 
+## Simulation
+
+![Inverted_pendulum](/assets/Lqr_inverted_pendulum.gif)
+
 ## Implementation of Inverted Pendulum in Hardware
 
 ## **Future Work**
